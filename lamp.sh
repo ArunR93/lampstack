@@ -84,7 +84,7 @@ sed -i "s#\LoadModule mpm_event_module modules/mod_mpm_event.so#\#LoadModule mpm
 rm -rf /var/cache/dnf/
 rm -rf /var/lib/dnf
 rm -rf /var/lib/rpm
-      
+dbconf   
 }
 
 centos7()
@@ -108,5 +108,6 @@ sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/my.cnf.d
 sed -i "s#\#LoadModule mpm_prefork_module modules/mod_mpm_prefork.so#LoadModule mpm_prefork_module modules/mod_mpm_prefork.so#" /etc/httpd/conf.modules.d/00-mpm.conf
 sed -i "s#\LoadModule mpm_event_module modules/mod_mpm_event.so#\#LoadModule mpm_event_module modules/mod_mpm_event.so#" /etc/httpd/conf.modules.d/00-mpm.conf
 rm -rf /var/lib/rpm
+dbconf
 }
 
