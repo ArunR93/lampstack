@@ -1,6 +1,6 @@
 #!/bin/bash
-
-MYSQL_ROOT_PASSWORD=''
+echo "Enter ROOT Password for DATABASE"
+read MYSQL_ROOT_PASSWORD
 
 dbconf()
 {
