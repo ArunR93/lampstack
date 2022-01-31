@@ -4,8 +4,6 @@ MYSQL_ROOT_PASSWORD=''
 
 dbconf()
 {
-#!/bin/sh
-
 # start apache
 echo "Starting httpd"
 httpd
